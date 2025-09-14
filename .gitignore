@@ -1,0 +1,4 @@
+*.code-workspace
+*.o
+00_simple/00_simple
+01_multiple_windows/01_multiple_windows
