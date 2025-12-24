@@ -1,4 +1,7 @@
-# glfw-cxx-examples
+# glfw-cxx Examples
+
+glfw-cxx is a C++, Object Oriented wrapper for GLFW3.
+These examples demonstrate its usage.
 
 ## 00 Simple
 
