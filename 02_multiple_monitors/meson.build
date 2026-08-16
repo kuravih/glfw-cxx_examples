@@ -20,7 +20,7 @@ glfw_cxx_sources = files(
 glfw_cxx_lib = static_library('glfw-cxx', sources: glfw_cxx_sources, include_directories: glfw_cxx_inc)
 
 executable(
-    '00_simple',
+    '02_multiple_monitors',
     'main.cpp',
     include_directories: glfw_cxx_inc,
     dependencies: glfw3_dep,

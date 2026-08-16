@@ -10,7 +10,7 @@ static void glfw_error_callback(int error, const char *description)
     std::cerr << "GLFW Error" << error << ":" << description << "\n";
 }
 
-int main(int argc, char **argv)
+int main()
 {
 
     glfw::Error::SetErrorCallback(glfw_error_callback);
@@ -35,7 +35,10 @@ int main(int argc, char **argv)
                 case glfw::Event::Type::Key:
                     if (mainWindowEvent.key.action == glfw::KeyAction::Press)
                         if (mainWindowEvent.key.key == glfw::Key::Escape)
-                            mainWindow.SetShouldClose(GL_TRUE);
+                            mainWindow.SetShouldClose(true);
+                    break;
+                default:
+                    break;
                 }
             }
             mainWindow.SwapBuffers();
@@ -53,7 +56,10 @@ int main(int argc, char **argv)
                 case glfw::Event::Type::Key:
                     if (subWindowEvent.key.action == glfw::KeyAction::Press)
                         if (subWindowEvent.key.key == glfw::Key::Escape)
-                            subWindow.SetShouldClose(GL_TRUE);
+                            subWindow.SetShouldClose(true);
+                    break;
+                default:
+                    break;
                 }
             }
             subWindow.SwapBuffers();
